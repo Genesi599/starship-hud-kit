@@ -94,7 +94,9 @@ Observed at submission time (2026-10-26, Reasonix Studio 2.52.0, Windows):
 - Applying it wrote `theme_pack = "plugin:starship-hud-kit:starship-hud"` into
   `config.toml`, and the backdrop served with 200.
 
-The light palette has not been visually reviewed yet in this run.
+The light palette was reviewed in Studio 2.52.0 after the cool fog blue
+revision and accepted by the author; the shared dark backdrop is a known
+trade-off of Studio's single-image background model.
 
 Failure case: replacing `starship-hud/theme.json` with a `schemaVersion: 2`
 manifest makes the theme disappear from the gallery with no error in
