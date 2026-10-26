@@ -7,21 +7,21 @@
   "license": "Tokens CC0; background artwork AI-generated via CogView (cogview-3-flash)",
   "tokens": {
     "light": {
-      "bg": "#eef3f7",
-      "bgSoft": "#e3ebf2",
-      "panel": "#f7fafc",
+      "bg": "#dce7f0",
+      "bgSoft": "#d2e0ec",
+      "panel": "#eef5fa",
       "bgElev": "#ffffff",
-      "border": "#9fc0d4",
-      "borderSoft": "#cfe0ea",
-      "fg": "#0b1a24",
-      "fgDim": "#3f5f72",
-      "fgFaint": "#6b8a9c",
+      "border": "#9dbfd5",
+      "borderSoft": "#c2d7e5",
+      "fg": "#0a1822",
+      "fgDim": "#3a5a6e",
+      "fgFaint": "#648599",
       "accent": "#0e7490",
       "accentFg": "#ffffff",
       "halo": "#0891b2",
       "brand": "#0891b2",
       "link": "#0369a1",
-      "codeBg": "#e8eff5"
+      "codeBg": "#dde8f1"
     },
     "dark": {
       "bg": "#05090f",

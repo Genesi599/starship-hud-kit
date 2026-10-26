@@ -15,10 +15,10 @@ included so the pack loads in both schemes.
 
 | Surface | Dark | Light |
 | --- | --- | --- |
-| Page | `#05090f` | `#eef3f7` |
-| Panel | `#101b26` | `#f7fafc` |
-| Border | `#1d5a7a` | `#9fc0d4` |
-| Text | `#d7e5ef` | `#0b1a24` |
+| Page | `#05090f` | `#dce7f0` |
+| Panel | `#101b26` | `#eef5fa` |
+| Border | `#1d5a7a` | `#9dbfd5` |
+| Text | `#d7e5ef` | `#0a1822` |
 | Accent | `#06b6d4` | `#0e7490` |
 | Accent text | `#021a24` | `#ffffff` |
 
@@ -28,6 +28,10 @@ fgFaint accent accentFg halo brand link codeBg`.
 The backdrop is `starship-hud/background.webp` (1440×720). Studio locates it by
 the conventional filename, so no `background.image` field is used. Home opacity
 0.95, task opacity 0.6, overlay 0.55, focal point 0.6 / 0.5, safe area left.
+
+One image serves both schemes: Studio has no per-scheme backdrop. The light
+palette is therefore a cool fog blue rather than white, so the same nebula does
+not fight the reading surface.
 
 ## Install
 
