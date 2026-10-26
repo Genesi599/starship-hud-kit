@@ -79,11 +79,18 @@ Expected result: one card named **Starship HUD · 星舰操作台** under the
 non-official group; selecting it paints the dark palette above and shows the
 nebula backdrop; switching to light mode uses the light palette.
 
-Observed at submission time: **not yet recorded.** The author must install this
-package from the pinned commit, apply the theme, check both schemes, and replace
-this paragraph with the actual result before submitting. A local dry run is not
-enough: Studio drops malformed packs without writing an error to `host.log`, so
-only "the card appears in Appearance and paints the page" counts as evidence.
+Observed at submission time (2026-10-26, Reasonix Studio 2.52.0, Windows):
+
+- Installed from a local folder through **Settings → Extensions → Install**. The
+  install plan reported one theme contribution and no execution capability;
+  Studio copied the package to `plugins/starship-hud-kit/` and recorded it in
+  `plugin-packages.json` as enabled.
+- The gallery listed the pack and served
+  `GET /themes/plugin:starship-hud-kit:starship-hud/preview` with 200.
+- Applying it wrote `theme_pack = "plugin:starship-hud-kit:starship-hud"` into
+  `config.toml`, and the backdrop served with 200.
+
+The light palette has not been visually reviewed yet in this run.
 
 Failure case: replacing `starship-hud/theme.json` with a `schemaVersion: 2`
 manifest makes the theme disappear from the gallery with no error in
