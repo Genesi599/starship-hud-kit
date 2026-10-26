@@ -4,10 +4,13 @@ A Reasonix Studio theme: matte instrument panels, a nebula seen through the
 forward window, and a cyan console accent. Dark-first; a cool light palette is
 included so the pack loads in both schemes.
 
-![preview](starship-hud/preview.webp)
+![preview](plugins/starship-hud-kit/starship-hud/preview.webp)
 
 - **Theme id**: `plugin:starship-hud-kit:starship-hud`
-- **Pack manifest**: `reasonix-plugin.json` (apiVersion `reasonix.io/plugin/v2`)
+- **Pack root**: [`plugins/starship-hud-kit/`](plugins/starship-hud-kit) — the
+  marketplace source points here, so the manifest sits at the directory root
+- **Pack manifest**: `plugins/starship-hud-kit/reasonix-plugin.json` (apiVersion
+  `reasonix.io/plugin/v2`)
 - **Theme schema**: `schemaVersion: 1` (studio authoring contract)
 - **Package version**: 1.0.0
 
@@ -25,7 +28,8 @@ included so the pack loads in both schemes.
 15 tokens per scheme: `bg bgSoft panel bgElev border borderSoft fg fgDim
 fgFaint accent accentFg halo brand link codeBg`.
 
-The backdrop is `starship-hud/background.webp` (1440×720). Studio locates it by
+The backdrop is `plugins/starship-hud-kit/starship-hud/background.webp`
+(1440×720). Studio locates it by
 the conventional filename, so no `background.image` field is used. Home opacity
 0.95, task opacity 0.6, overlay 0.55, focal point 0.6 / 0.5, safe area left.
 
@@ -35,11 +39,11 @@ not fight the reading surface.
 
 ## Install
 
-Local development copy:
+Local development copy (from the repository root):
 
 ```bash
-reasonix plugin install ./starship-hud-kit --dry-run
-reasonix plugin install ./starship-hud-kit --link --yes
+reasonix plugin install ./plugins/starship-hud-kit --dry-run
+reasonix plugin install ./plugins/starship-hud-kit --link --yes
 reasonix plugin doctor starship-hud-kit
 ```
 
@@ -51,16 +55,26 @@ package to stop showing it.
 
 ## Package layout
 
+The repository root is a plain container; the publishable pack is the
+`plugins/starship-hud-kit/` folder, and its manifest sits at that folder's root
+(marketplace sources must point at one package, not at the whole repository).
+
 ```text
-starship-hud-kit/
-  reasonix-plugin.json        # apiVersion reasonix.io/plugin/v2
+starship-hud-kit/                      # repository root
   README.md
   LICENSE
-  starship-hud/
-    theme.json                # schemaVersion: 1
-    background.webp           # 1440×720, 171 KiB
-    preview.webp              # 1280×720 gallery card
+  .gitignore
+  plugins/
+    starship-hud-kit/                  # package root (point the source here)
+      reasonix-plugin.json             # apiVersion reasonix.io/plugin/v2
+      starship-hud/
+        theme.json                     # schemaVersion: 1
+        background.webp                # 1440×720, 171 KiB
+        preview.webp                   # 1280×720 gallery card
 ```
+
+Theme contributions are resolved against the package root, so
+`"themes": ["starship-hud/theme.json"]` keeps working unchanged.
 
 ## Compatibility and requirements
 
