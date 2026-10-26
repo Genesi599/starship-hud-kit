@@ -1,0 +1,11 @@
+{
+  "apiVersion": "reasonix.io/plugin/v2",
+  "name": "starship-hud-kit",
+  "version": "1.0.0",
+  "description": "Starship HUD (星舰操作台) — a sci-fi starship operations console theme for Reasonix Studio, with a nebula backdrop and a cyan instrument accent.",
+  "contributes": {
+    "themes": [
+      "starship-hud/theme.json"
+    ]
+  }
+}

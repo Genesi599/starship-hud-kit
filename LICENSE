@@ -1,0 +1,33 @@
+Starship HUD · 星舰操作台 — licence terms
+==========================================
+
+Copyright (c) 2026 yh109.
+
+1. Design tokens
+----------------
+The colour tokens and scale values in `starship-hud/theme.json` are released
+under CC0-1.0 (public domain dedication):
+https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+2. Artwork
+----------
+`starship-hud/background.webp` and `starship-hud/preview.webp` were generated
+with CogView (`cogview-3-flash`) from prompts written by the author.
+
+Default terms for this package:
+
+  - Redistribution of the artwork as part of this complete, unmodified theme
+    package is permitted, including through the Reasonix community market.
+  - Re-selling the artwork on its own, or including it in another asset or
+    theme pack, requires written permission from the author.
+  - Attribution is not required, but "Starship HUD · 星舰操作台 by yh109" is
+    appreciated where the package is listed.
+
+The author may replace this section with broader terms (for example CC BY 4.0
+or CC0-1.0) before publishing. Anything stated here overrides the summary in
+README.md.
+
+3. No warranty
+--------------
+The package is provided "as is", without warranty of any kind. It contributes
+tokens and one image to Reasonix Studio; it runs no code.

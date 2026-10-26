@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "id": "starship-hud",
+  "name": "Starship HUD · 星舰操作台",
+  "author": "yh109",
+  "description": "科幻宇宙飞船操作台：面板为哑光仪表台面，主界面从舷窗眺望星云，对话中透出银河星野。深色为主，浅色模式回落到 Studio 默认阅读面。",
+  "license": "Tokens CC0; background artwork AI-generated via CogView (cogview-3-flash)",
+  "tokens": {
+    "light": {
+      "bg": "#eef3f7",
+      "bgSoft": "#e3ebf2",
+      "panel": "#f7fafc",
+      "bgElev": "#ffffff",
+      "border": "#9fc0d4",
+      "borderSoft": "#cfe0ea",
+      "fg": "#0b1a24",
+      "fgDim": "#3f5f72",
+      "fgFaint": "#6b8a9c",
+      "accent": "#0e7490",
+      "accentFg": "#ffffff",
+      "halo": "#0891b2",
+      "brand": "#0891b2",
+      "link": "#0369a1",
+      "codeBg": "#e8eff5"
+    },
+    "dark": {
+      "bg": "#05090f",
+      "bgSoft": "#0a1119",
+      "panel": "#101b26",
+      "bgElev": "#0f1a26",
+      "border": "#1d5a7a",
+      "borderSoft": "#123649",
+      "fg": "#d7e5ef",
+      "fgDim": "#90b2c6",
+      "fgFaint": "#5f8199",
+      "accent": "#06b6d4",
+      "accentFg": "#021a24",
+      "halo": "#06b6d4",
+      "brand": "#22d3ee",
+      "link": "#38bdf8",
+      "codeBg": "#0b1620"
+    }
+  },
+  "background": {
+    "focusX": 0.6,
+    "focusY": 0.5,
+    "safeArea": "left",
+    "homeOpacity": 0.95,
+    "taskOpacity": 0.6,
+    "overlayStrength": 0.55
+  }
+}
