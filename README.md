@@ -12,7 +12,7 @@ included so the pack loads in both schemes.
 - **Pack manifest**: `plugins/starship-hud-kit/reasonix-plugin.json` (apiVersion
   `reasonix.io/plugin/v2`)
 - **Theme schema**: `schemaVersion: 1` (studio authoring contract)
-- **Package version**: 1.0.0
+- **Package version**: 1.0.1
 
 ## What it changes
 
