@@ -43,8 +43,7 @@ Restart Studio after an external CLI change, then open **Settings → Appearance
 → Browse themes** and pick **Starship HUD · 星舰操作台**.
 
 The theme is read-only while contributed by a plugin: disable or remove the
-package to stop showing it. Removal does not touch any user theme of the same
-name.
+package to stop showing it.
 
 ## Package layout
 
@@ -55,13 +54,13 @@ starship-hud-kit/
   LICENSE
   starship-hud/
     theme.json                # schemaVersion: 1
-    background.webp           # 1440×720, 172 KiB
+    background.webp           # 1440×720, 171 KiB
     preview.webp              # 1280×720 gallery card
 ```
 
 ## Compatibility and requirements
 
-- Reasonix Studio 2.52.0 or later (theme contract `schemaVersion: 1`).
+- Tested against Reasonix Studio 2.52.0 (theme contract `schemaVersion: 1`).
 - No required tools, credentials, network access, or runtime sidecar. The pack
   is declarative: tokens plus one image.
 - Platforms: Windows, macOS, Linux — the theme has no platform-specific code.
@@ -80,8 +79,11 @@ Expected result: one card named **Starship HUD · 星舰操作台** under the
 non-official group; selecting it paints the dark palette above and shows the
 nebula backdrop; switching to light mode uses the light palette.
 
-Observed at submission time: the theme loads, applies, and renders both
-schemes; the `preview.webp` card renders in the gallery.
+Observed at submission time: **not yet recorded.** The author must install this
+package from the pinned commit, apply the theme, check both schemes, and replace
+this paragraph with the actual result before submitting. A local dry run is not
+enough: Studio drops malformed packs without writing an error to `host.log`, so
+only "the card appears in Appearance and paints the page" counts as evidence.
 
 Failure case: replacing `starship-hud/theme.json` with a `schemaVersion: 2`
 manifest makes the theme disappear from the gallery with no error in
