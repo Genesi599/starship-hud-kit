@@ -100,7 +100,8 @@ in this README.
 ## Maintainer
 
 - Author: yh109
-- Contact: open an issue on the repository that hosts this package.
+- Repository: https://github.com/Genesi599/starship-hud-kit
+- Contact: open an issue at https://github.com/Genesi599/starship-hud-kit/issues
 
 ---
 
